@@ -1,0 +1,147 @@
+﻿body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background: #e9e0d1;
+    
+}
+
+.wrap {
+    position: center;
+    width: 60vmin;
+    height: 60vmin;
+    margin: 0 auto;
+
+    transform: scale(0.2) translatez(0px);
+    opacity: 0;
+    transition: transform .5s, opacity .5s;
+}
+
+a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 47.5%;
+    height: 47.5%;
+    overflow: hidden;
+    transform: scale(.5) translateZ(0px);
+    background: #585247;
+}
+
+    a div {
+        height: 100%;
+        background-size: cover;
+        transition: opacity .5s;
+        border-radius: inherit;
+    }
+
+    a:nth-child(1) {
+        border-radius: 40vmin 0 0 0;
+        transform-origin: 110% 110%;
+        transition: transform .4s .15s;
+    }
+
+        a:nth-child(1) div {
+            background-image: url('https://www.economiadehoy.es/fotos/8/Comoeseltrabajodeunasesorinmobiliario_thumb_468.jpg');
+        }
+
+    a:nth-child(2) {
+        border-radius: 0 40vmin 0 0;
+        left: 52.5%;
+        transform-origin: -10% 110%;
+        transition: transform .4s .2s;
+    }
+
+        a:nth-child(2) div {
+            background-image: url('https://media.istockphoto.com/id/1406414052/es/foto/pareja-hombre-trato-mujer-contrato-agente-de-negocios-acuerdo-consultor-de-inversi%C3%B3n.jpg?s=1024x1024&w=is&k=20&c=TqyczLXGIsh59HeToEFuJX-phWa8vHy3-NCqNw01-xo=');
+        }
+
+    a:nth-child(3) {
+        border-radius: 0 0 0 40vmin;
+        top: 52.5%;
+        transform-origin: 110% -10%;
+        transition: transform .4s .25s;
+    }
+
+        a:nth-child(3) div {
+            background-image: url('https://media.istockphoto.com/id/1409298953/es/foto/los-agentes-inmobiliarios-se-dan-la-mano-despu%C3%A9s-de-que-se-complete-la-firma-del-acuerdo.jpg?s=1024x1024&w=is&k=20&c=vQ20hqmdBTNi9FA4aWhYk32gLy9dVXEgIFijj1UR5tQ=');
+        }
+
+    a:nth-child(4) {
+        border-radius: 0 0 40vmin 0;
+        top: 52.5%;
+        left: 52.5%;
+        transform-origin: -10% -10%;
+        transition: transform .4s .3s;
+    }
+
+        a:nth-child(4) div {
+            background-image: url('https://media.istockphoto.com/id/1186732582/es/vector/icono-de-la-puerta-logotipo-aislado-sobre-fondo-blanco.jpg?s=2048x2048&w=is&k=20&c=UPHQKSl-kXZ9ZsSRy-qwdnCNr0mA7L6YAUWd1x7WrwY=');
+        }
+
+    a:nth-child(5) {
+        width: 55%;
+        height: 55%;
+        left: 22.5%;
+        top: 22.5%;
+        border-radius: 50vmin;
+        box-shadow: 0 0 0 5vmin #E3DFD2;
+        transform: scale(1);
+    }
+
+        a:nth-child(5) div {
+            background-image: url('https://img.freepik.com/vector-premium/icono-inicio-simbolo-casa-diseno-vectorial-simple-logo_231786-5048.jpg?w=826');
+        }
+
+span {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: 35vmin;
+    width: 10vmin;
+    height: 10vmin;
+    border-radius: 100%;
+    background: #585247;
+    transform: translateZ(0px);
+}
+
+    span span {
+        position: absolute;
+        width: 60%;
+        height: 3px;
+        background: #cecac1;
+        left: 20%;
+        top: 50%;
+        border-radius: 0;
+    }
+
+        span span:after, span span:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -1.5vmin;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+        }
+
+        span span:after {
+            top: 1.5vmin;
+        }
+
+    span:hover + .wrap, .wrap:hover {
+        transform: scale(.5) translateZ(0px);
+        opacity: 1;
+    }
+
+        span:hover + .wrap a, .wrap:hover a {
+            transform: scale(1) translatez(0px);
+        }
+
+a:hover div {
+    opacity: 1;
+    transform: translatez(0px);
+}
